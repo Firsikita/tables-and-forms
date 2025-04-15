@@ -9,7 +9,31 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="POST" action="/pets/orders">
+        <label for="petType">Тип питомца:</label><br>
+        <select id="petType" name="petType">
+            <option value="dog" selected>Собака</option>
+            <option value="cat">Кошка</option>
+            <option value="parrot">Попугай</option>
+            <option value="hamster">Хомяк</option>
+        </select><br><br>
+    
+        <label for="eyeColor">Цвет глаз питомца:</label><br>
+        <input type="color" id="eyeColor" name="eyeColor" value="#00ff00"><br><br>
+    
+        <label for="tailLength">Длина хвоста (см):</label><br>
+        <input type="number" id="tailLength" name="tailLength" value="10" min="0"><br><br>
+    
+        <label for="name">Имя питомца:</label><br>
+        <input type="text" id="name" name="name" placeholder="Барсик" value="Барсик"><br><br>
+
+        <label>Пол питомца:</label><br>
+        <input type="radio" id="gender-boy" name="gender" value="boy" checked>
+        <label for="gender-boy">Мальчик</label><br>
+        <input type="radio" id="gender-girl" name="gender" value="girl">
+        <label for="gender-girl">Девочка</label><br><br>
+    </form>
+
 
 </main>
 </body>
